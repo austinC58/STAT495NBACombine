@@ -19,7 +19,7 @@ function(input,output,session){
 
 #data function to take user inputs and load according csv.
   data <- eventReactive(input$load_csv, {
-   as.data.frame(read.csv(paste0('ShinyAppData',input$PP ,input$TS ,'.csv'), row.names = 1))
+   as.data.frame(read.csv(paste0('ShinyAppdata',input$PP ,input$TS ,'.csv'), row.names = 1))
   })
 
   observe({
